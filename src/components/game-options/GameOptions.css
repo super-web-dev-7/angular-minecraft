@@ -1,0 +1,39 @@
+  .game-options {
+    width: 250px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: #8bcaca;
+    border-right: 30px solid #a0dddd;
+    color: #3c253a;
+    font-weight: 600;
+  }
+  .flags-number {
+    margin-bottom: 30px;
+    margin-top:80px;
+  }
+  .flags-number .number{
+    font-size: 35px;
+  }
+  .flags-number .flag-pic {
+    background-image: url("../../images/red_flag.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 60px;
+    width:60px;
+  }
+  .superman-option input {
+    height:20px;
+    width:20px;
+  }
+  .superman-option label {
+    vertical-align: top;
+  }
+  .game-options .footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+  }

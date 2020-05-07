@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
+
+.cell {
+    width: 45px;
+    height: 45px;
+    border:0;
+    float: left;
+    position: relative;
+}
+.cell button {
+    z-index: 60;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    display:inline-block;
+    transition: opacity 0.2s ease-out;
+    cursor: pointer;
+    border: 0;
+    position: relative;
+}
+.cell.open button {
+    opacity: 0;
+    cursor: auto;
+}
+.cell .cell-content {
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    font-family: 'Architects Daughter', cursive;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cell.open {
+    box-shadow: inset 0px 0px 1px 0px rgba(171,171,171,1);
+    cursor: auto;
+}
+.cell .flag {
+    background-image: url("../../images/red_flag.svg");
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-position: center center;  
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 999;
+    top: -5px;
+    left: 15px;
+    pointer-events: none;
+}
+.superman-mode .cell:not(.open) button {
+    opacity: 0.7;
+}
+.cell button.dark {
+    background: #dd5050;
+}
+.cell button.light {
+    background: #ef5d5d;
+}
+.cell.dark {
+    background: #f3f3f3;
+}
+.cell.light {
+    background: #fbfbfb;
+}
+
+.number-color-1 {
+    color:#99a2ee;
+}
+.number-color-2 {
+    color:#619ce9;
+}
+.number-color-3 {
+    color:#5974ce;
+}
+.number-color-4 {
+    color:#b49923;
+}
+.number-color-5 {
+    color:#ad630e;
+}
+.number-color-6 {
+    color:#947615;
+}
+.number-color-7 {
+    color:#810c0c;
+}
+.number-color-8 {
+    color:#501506;
+}
+
+.led-red {
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #F00;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 -1px 7px 1px, inset #8a0c0c 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+    -webkit-animation: blinkRed 1s infinite;
+    -moz-animation: blinkRed 1s infinite;
+    -ms-animation: blinkRed 1s infinite;
+    -o-animation: blinkRed 1s infinite;
+    animation: blinkRed 1s infinite;
+    margin-bottom: 15px;
+}
+
+@-webkit-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.1) 0 -1px 7px 1px, inset #8a0c0c 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@-moz-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.1) 0 -1px 7px 1px, inset #8a0c0c 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@-ms-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.1) 0 -1px 7px 1px, inset #8a0c0c 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@-o-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.1) 0 -1px 7px 1px, inset #8a0c0c 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.1) 0 -1px 7px 1px, inset #8a0c0c 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}

@@ -1,0 +1,47 @@
+.hide {
+    display: none;
+}
+.nav-button {
+    position: absolute;
+    cursor: pointer;
+    width: 0; 
+    height: 0; 
+}
+.nav-button.Up {
+  top: -30px;
+  border-bottom: 20px solid #195f5f;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+.nav-button.Down {
+    bottom: -30px;   
+    border-top: 20px solid #195f5f;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+.nav-button.Right {
+    right:-30px;
+    top: 50%;
+    border-left: 20px solid #195f5f;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+.nav-button.Left {
+    top:50%;
+    left: -30px;
+    border-right: 20px solid #195f5f;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+.nav-button.Left:hover {
+    border-right: 20px solid #319a9a;
+}
+.nav-button.Right:hover {
+    border-left: 20px solid #319a9a;
+}
+.nav-button.Up:hover {
+    border-bottom: 20px solid #319a9a;
+}
+.nav-button.Down:hover {
+    border-top: 20px solid #319a9a;
+}

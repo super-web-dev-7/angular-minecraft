@@ -1,0 +1,92 @@
+  .field-group * {
+      box-sizing: border-box;
+  }
+  .field-group { 
+    position:relative; 
+    margin-bottom:45px;
+    margin-top: 20px; 
+  }
+  .field-group input 				{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:90px;
+    border:none;
+    background: #8bcaca;
+    border-bottom:1px solid #528c8c;
+    color: #ffffff;
+  }
+  input:focus { 
+      outline:none; 
+  }
+  
+  .field-group label {
+    color:#528c8c; 
+    font-size:16px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  .field-group input:focus ~ label, .field-group input:valid ~ label 		{
+    top:-20px;
+    font-size:14px;
+    color:#528c8c;
+  }
+  
+  .field-group .bar 	{ position:relative; display:block; width:90px; }
+  .field-group .bar:before, .bar:after 	{
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:#528c8c; 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  .field-group .bar:before {
+    left:50%;
+  }
+  .field-group .bar:after {
+    right:50%; 
+  }
+  
+  .field-group input:focus ~ .bar:before, .field-group input:focus ~ .bar:after {
+    width:50%;
+  }
+  
+  .field-group .highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+  
+  .field-group  input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  @-webkit-keyframes inputHighlighter {
+      from { background:#528c8c; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+      from { background:#528c8c; }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+      from { background:#528c8c; }
+    to 	{ width:0; background:transparent; }
+  }

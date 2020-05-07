@@ -1,0 +1,11 @@
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:50px solid white;
+    background: white;
+    position: relative;
+}
+.row {
+    display:flex;
+}
