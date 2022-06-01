@@ -1,8 +1,8 @@
 {
-  "name": "minesweeper",
+  "name": "minesweeper-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gabayarden.github.io/minesweeper",
+  "homepage": "",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.6.3",
